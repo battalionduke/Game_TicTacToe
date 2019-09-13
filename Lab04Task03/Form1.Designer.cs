@@ -37,7 +37,7 @@
             this.btnSeven = new System.Windows.Forms.Button();
             this.btnEight = new System.Windows.Forms.Button();
             this.btnNine = new System.Windows.Forms.Button();
-            this.btnPlayAgain = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblInfo = new System.Windows.Forms.Label();
             this.lblPlayerOne = new System.Windows.Forms.Label();
@@ -136,15 +136,15 @@
             this.btnNine.UseVisualStyleBackColor = true;
             this.btnNine.Click += new System.EventHandler(this.btnNine_Click);
             // 
-            // btnPlayAgain
+            // btnReset
             // 
-            this.btnPlayAgain.Location = new System.Drawing.Point(244, 13);
-            this.btnPlayAgain.Name = "btnPlayAgain";
-            this.btnPlayAgain.Size = new System.Drawing.Size(110, 31);
-            this.btnPlayAgain.TabIndex = 9;
-            this.btnPlayAgain.Text = "Play Again";
-            this.btnPlayAgain.UseVisualStyleBackColor = true;
-            this.btnPlayAgain.Click += new System.EventHandler(this.btnPlayAgain_Click);
+            this.btnReset.Location = new System.Drawing.Point(244, 13);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(110, 31);
+            this.btnReset.TabIndex = 9;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // lblStatus
             // 
@@ -211,7 +211,7 @@
             this.Controls.Add(this.lblPlayerOne);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.btnPlayAgain);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnNine);
             this.Controls.Add(this.btnEight);
             this.Controls.Add(this.btnSeven);
@@ -221,8 +221,9 @@
             this.Controls.Add(this.btnThree);
             this.Controls.Add(this.btnTwo);
             this.Controls.Add(this.btnOne);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "frmTicTacToe";
+            this.Text = "TicTacToe";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,7 +240,7 @@
         private System.Windows.Forms.Button btnSeven;
         private System.Windows.Forms.Button btnEight;
         private System.Windows.Forms.Button btnNine;
-        private System.Windows.Forms.Button btnPlayAgain;
+        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Label lblPlayerOne;

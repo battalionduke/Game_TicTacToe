@@ -9,8 +9,9 @@ namespace Lab04Task03
     class classTicTacToe
     {
         private bool toogleValue=true;
-        private string userOne = "O";
-        private string userTwo = "X";
+        private bool initialTurn = true;
+        private readonly string userOne = "O";
+        private readonly string userTwo = "X";
         private int scoreOne = 0;
         private int scoreTwo = 0;
 
@@ -45,6 +46,17 @@ namespace Lab04Task03
         public void increaseScoreTwo()
         {
             scoreTwo++;
+        }
+        public bool getInitialTurn()
+        {
+            return initialTurn;
+        }
+        public void ToogleInitialTurn()
+        {
+            if (getInitialTurn())
+                initialTurn = false;
+            else
+                initialTurn = true;
         }
     }
 }
